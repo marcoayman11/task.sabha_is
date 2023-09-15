@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_friday_c9/model/sura_details_args.dart';
 import 'package:islami_friday_c9/ui/screens/sura_details_screen/sura_details_screen.dart';
 import 'package:islami_friday_c9/ui/utils/app_assets.dart';
 import 'package:islami_friday_c9/ui/utils/app_colors.dart';
 import 'package:islami_friday_c9/ui/utils/constants.dart';
-
 class QuranTab extends StatelessWidget {
 
   @override
@@ -16,8 +16,9 @@ class QuranTab extends StatelessWidget {
           Expanded( flex: 35,child: Image.asset(AppAssets.quranLogo,)),
           const SizedBox(height: 4,),
           const Divider(color: AppColors.accent, thickness: 2,),
-          const Text("Sura name", textAlign: TextAlign.center,
-           style: TextStyle(fontSize: 25, color: AppColors.accent, fontWeight: FontWeight.w600),),
+          Text(AppLocalizations.of(context)!.suraName,
+            textAlign: TextAlign.center,
+           style: Theme.of(context).textTheme.bodyMedium,),
           const Divider(color: AppColors.accent, thickness: 2,),
           Expanded(flex: 65,
            child: ListView.separated(
