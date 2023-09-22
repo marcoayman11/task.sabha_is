@@ -8,4 +8,9 @@ abstract class AppAssets{
    static const String ahadethLogo = "${baseImagesPath}ahadeth_tab_logo.png";
    static const String background = "${baseImagesPath}background.png";
    static const String darkBackground = "${baseImagesPath}background_dark.png";
+   static const String sebhabody = "${baseImagesPath}body_sebha_logo.png";
+   static const String sebhahead = "${baseImagesPath}head_sebha_logo.png";
+
+
+
 }
